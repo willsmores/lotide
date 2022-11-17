@@ -38,10 +38,9 @@ const eqObjects = function(object1, object2) {
       }
     }
     // If the value for this key in object1 does not match the same key in object2... false!
-    if (object1[key] === object2[key]) {
+    if (object1[key] !== object2[key]) {
       return false;
     }
-
   }
   // All other conditions will return true
   return true;
@@ -49,7 +48,8 @@ const eqObjects = function(object1, object2) {
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
-assertEqual(eqObjects(ab, ba), true); // should FAIL
+assertEqual(eqObjects(ab, ba), true); // should PASS
+assertEqual(eqObjects(ab, ab), true); // should PASS
 
 const abc = { a: "1", b: "2", c: "3" };
 assertEqual(eqObjects(ab, abc), false); // should PASS
