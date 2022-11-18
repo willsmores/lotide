@@ -1,5 +1,10 @@
 const eqArrays = function(arr1, arr2) {
 
+  // Return false if the arrays are different lengths
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+
   // Return true if both arrays are empty
   if (arr1.length === 0 && arr2.length === 0) {
     return true;
@@ -33,4 +38,5 @@ assertArraysEqual([1,2,3],[1,2,'3']); // Should FAIL
 assertArraysEqual([1,2,3],[1,2,3]); // Should PASS
 assertArraysEqual([1,2,3],[3,2,1]); // Should FAIL
 assertArraysEqual([1,2,3,4,5],[1,2,3]); // Should FAIL
+assertArraysEqual([1,2,3],[1,2,3,4,5]); // Should FAIL
 assertArraysEqual(['1','2','3'],['1','2','3']); // Should PASS
