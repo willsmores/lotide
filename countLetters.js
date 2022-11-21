@@ -19,4 +19,4 @@ const countLetters = function(sentence) {
   return letterCount;
 };
 
-document.exports = countLetters;
+module.exports = countLetters;

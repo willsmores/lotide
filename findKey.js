@@ -11,4 +11,4 @@ const findKey = (obj, callback) => {
   return undefined;
 };
 
-document.exports = findKey;
+module.exports = findKey;

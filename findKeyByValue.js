@@ -9,5 +9,5 @@ const findKeyByValue = function(obj, val) {
   }
 };
 
-document.exports = findKeyByValue;
+module.exports = findKeyByValue;
 

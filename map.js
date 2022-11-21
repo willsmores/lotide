@@ -8,4 +8,4 @@ const map = function(array, callback) {
   return results;
 };
 
-document.exports = map;
+module.exports = map;

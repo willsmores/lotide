@@ -18,6 +18,6 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-document.exports = letterPositions;
+module.exports = letterPositions;
 
 
